@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 35px;
+  }
+  
+  /* Image container styles */
+  .image-container_1,.image-container_2,.image-container_3 {
+      width: 800px; /* Width of the image container */
+      height: 300px; /* Height of the image container */
+      margin: 30px; /* Margin around the image container */
+      border: 10px solid #e03232bd; /* Border around the image container */
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Box shadow around the image container */
+      padding: 50px; /* Padding inside the image container */
+      border-radius: 50px; /* Border radius of the image container */
+      overflow: hidden; /* Hide any overflow inside the image container */
+      display: flex; /* Display the image container as a flex container */
+      flex-direction: row; /* Set the direction of the flex container to horizontal */
+      display: inline-flex; /* Display the image container as an inline-flex container */
+      justify-content: center; /* Center the content inside the image container */
+      text-align: left; /* Left align the text inside the image container */
+  }
+  
+  /* Image styles */
+  .image-container_1 img,.image-container_2 img,.image-container_3 img {
+      width: 100%; /* Width of the image */
+      height: auto; /* Height of the image */
+      transition: filter 0.2s ease-in-out; /* Add a transition effect to the filter property */
+  }
+  
+  /* Caption styles */
+  .image-container_1 p,.image-container_2 p,.image-container_3 p {
+      margin: 10px; /* Margin around the text */
+      padding: 5px; /*Padding around the text */
+      font-size: 20px; /* Font size of the text */
+      color: #ffffff; /* Color of the text */
+      transition: transform 0.2s ease-in-out; /* Add a transition effect to the transform property */
+  }
+  
+  /* First child styles (heading) */
+  .image-container_1 p:first-child,.image-container_2 p:first-child,.image-container_3 p:first-child {
+      font-size: 25px; /* Font size of the heading */
+      font-weight: bold; /* Bold the heading */
+      color: #ece7e7; /* Color of the heading */
+  }
+
+ .image-container_1 img,.image-container_2 img,.image-container_3 img {
+      filter: none; 
+  } 
+  /* Image filter styles */
+  .image-container_1 img:hover {
+      filter: sepia(30); /* Apply sepia filter to the image while hovering */
+  }
+  
+  .image-container_2 img:hover {
+      filter: grayscale(100%); /* Apply grayscale filter to the image while hovering */
+  }
+  
+  .image-container_3 img:hover {
+      filter: blur(5px); /* Apply blur filter to the image while hovering */
+  }
+  
+  /* Hover styles for the image container */
+  .image-container_1:hover,.image-container_2:hover,.image-container_3:hover {
+      transform: scale(1.05); /* Scale the image container on hover */
+  }
+  
+  /* Hover styles for the image */
+  
+  
+  /* Hover styles for the caption */
+  .image-container_1:hover p,.image-container_2:hover p,.image-container_3:hover p {
+      transform: translateY(-10px); /* Move the caption up on hover */
+  }
+  
+  /* Caption container styles */
+  .caption {
+      display: flex; /* Display the caption as a flex container */
+      flex-direction: column; /* Set the direction of the flex container to vertical */
+      justify-content: center; /* Center the content inside the caption container */
+      align-items: flex-start; /* Align the content to the left inside the caption container */
+      width: fit-content; /* Set the width of the caption container to fit the content */
+      margin: 25px; /* Add margin around the caption container */
+  }
