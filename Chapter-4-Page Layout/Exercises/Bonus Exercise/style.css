@@ -1,0 +1,215 @@
+/* General styles */
+
+/* Set the font family, line height, and text color for the body */
+body {
+    font-family:  Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set the font weight to normal for h1 and h2 elements */
+  h1, h2 {
+    font-weight: bolder;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  /* Remove the list style, margin, and padding for ul elements */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove the text decoration for a elements and set the text color to blue */
+  a {
+    text-decoration: none;
+    color: #090909;
+  }
+  
+  /* Add text decoration for a elements on hover */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Set the styles for button elements */
+  .Button_1 {
+    background-color: #b04bb1;
+    color: #fffafa;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 75px;
+    font-weight: bold;
+    border-radius: 30px;
+  }
+
+  .Button_1:hover{
+    background-color:#323035
+  }
+  
+  
+  .column-left{
+    font: Verdana, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding: 30px;
+    background-color:#3FD0BF;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 22px;
+  }
+  .Button_2{
+    background-color: #000000;
+    color: #fffafa;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 75px;
+    font-weight: bold;
+    border-radius: 30px;
+  }
+  /* Hover Elements */
+  .Button_2:hover {
+    background-color: #10783f;
+    border: none;
+  }
+  
+
+  .column-middle{
+    font: Verdana, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding: 30px;
+    background-color:#53ACEE;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 30px;
+
+  }
+
+.Button_3{
+    background-color: #000000;
+    color: #fffafa;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    border-radius: 30px;
+
+  }
+.Button_3:hover {
+    background-color: #3d55a5;
+    border: none;
+  }
+
+.column-right{
+  font: Verdana, sans-serif;
+  text-align: justify right;
+  padding-top: 40px;
+  padding: 30px;
+  background-color:#D6BDFF;
+  height: 400px;
+  width: 600px;
+  margin-top: 50px;
+  margin-right: 30px;
+ }
+
+  .Button_4{
+    background-color: #000000;
+    color: #fffafa;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    border-radius: 30px;
+  }
+
+
+.Button_4:hover {
+    background-color: #db6fd0;
+    border: none;
+  }
+
+  /* Header and footer styles */
+  header {
+    background-color: #704593;
+    color: #f4f3ed;
+    padding: 200px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  footer{
+    background-color: #110c15;
+    color: #f4f3ed;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  
+  /* Navigation menu styles */
+  nav {
+    background-color: #ffffff;
+    padding: 1rem;
+    font-size: 20px;
+    font: Verdana;
+  }
+  
+  /* Set the display and justify-content properties for the nav ul element */
+  nav ul {
+    display: flex;
+    justify-content: right;
+  }
+  
+  nav ul li{
+    margin: 9px
+  }
+  /* Set the padding for the nav a elements */
+  nav a {
+    padding: 8px, 16px;
+  }
+  
+  /* Main content styles */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Set the margin-bottom and width properties for the column-left, column-middle, and column-right elements */
+  .column-left, .column-middle, .column-right {
+    margin-bottom: 75px;
+  }
+  
+  .column-left, .column-right {
+    width: 25%;
+    text-align: center;
+  }
+  
+  .column-middle {
+    width: 30%;
+  }
+  
+  /* Set the styles for the max-width media query */
+  @media (max-width: 768px) {
+    .column-left, .column-middle, .column-right {
+      width: 100%;
+    }
+}
